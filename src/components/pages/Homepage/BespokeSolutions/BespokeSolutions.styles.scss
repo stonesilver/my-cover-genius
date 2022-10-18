@@ -44,6 +44,10 @@
     gap: 3.125rem;
 
     &-left {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
       &-sub-text {
         font-size: 0.875rem;
         color: $gray-600;
@@ -61,12 +65,19 @@
         grid-template-columns: repeat(4, 6.875rem);
         gap: 1.5rem;
         max-width: calc(100vw - 3.5rem);
-        justify-self: flex-end;
         overflow: auto;
+        padding-bottom: 0.5rem;
+        margin-top: 2.625rem;
 
         @include sm {
           grid-template-columns: 1fr;
           gap: 0.875rem;
+          padding-bottom: 0;
+        }
+
+        @include md {
+          padding-bottom: 0;
+            margin-top: 0;
         }
 
         &-item {
@@ -104,6 +115,36 @@
             border-left: 5px solid $primary;
             padding-left: 1.875rem;
           }
+        }
+      }
+    }
+
+    &-right {
+      height: 100%;
+      background-color: #f8fcfb;
+      padding: 1.625rem;
+
+      &-unordered {
+        padding: 0;
+        margin: 0;
+
+        &-item {
+          font-size: 0.75rem;
+          color: $primary-green;
+
+          @include sm {
+            font-size: 1.125rem;
+          }
+        }
+      }
+
+      &-masked {
+        width: 100%;
+        object-fit: contain;
+        margin-top: 1rem;
+
+        @include md {
+          height: 23.5rem;
         }
       }
     }

@@ -23,7 +23,14 @@ export const BespokeSolutions = () => {
             ))}
           </div>
         </div>
-        <div className='bespoke-solutions-grid-right'></div>
+        <div className='bespoke-solutions-grid-right'>
+          <ul className='bespoke-solutions-grid-right-unordered'>
+            <li className='bespoke-solutions-grid-right-unordered-item'>
+              A host of innovative plans for every aspect of your business
+            </li>
+          </ul>
+          <img src='/img/Mask1.webp' alt='mask banner' className='bespoke-solutions-grid-right-masked' />
+        </div>
       </div>
     </div>
   );
