@@ -2,7 +2,6 @@
 @import '../../../scss/variables';
 
 .all-round-insurance {
-  padding: 0 1.25rem;
   margin-top: 4.3rem;
 
   &-heading {
@@ -88,23 +87,5 @@
     @include md {
       margin-top: 7rem;
     }
-  }
-
-  @include sm {
-    padding: 0 3.25rem;
-  }
-
-  @include md {
-    padding: 0 2.25rem;
-    margin-top: 9.3rem;
-  }
-
-  @include lg {
-    padding: 0 6.25rem;
-  }
-
-  @include xxl {
-    max-width: 1600px;
-    margin: 4.3rem auto 0 auto;
   }
 }

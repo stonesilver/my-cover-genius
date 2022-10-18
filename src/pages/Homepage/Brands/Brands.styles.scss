@@ -1,0 +1,28 @@
+@import '../../../scss/media-queries';
+@import '../../../scss/variables';
+
+.brands-covered {
+  margin-top: 4.3rem;
+
+  &-title {
+    font-weight: 500;
+    color: $gray-700;
+
+    @include md {
+      font-size: 1.25rem;
+    }
+  }
+
+  //   &-brands-container {
+  //     height: 3.125rem;
+
+  //     &-brand {
+  //       width: 8rem;
+  //       height: 100%;
+  //     }
+
+  //     @include md {
+  //       height: 4.93rem;
+  //     }
+  //   }
+}
