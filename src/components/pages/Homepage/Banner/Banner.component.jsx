@@ -8,7 +8,7 @@ const Banner = () => {
       <div className='row'>
         <Col xs={12} lg={7} className='banner-text'>
           <p className='bold-text'>
-            Set your <span className=''>business</span> up for success with
+            Set your <span className='special-text'>business</span> up for success with
             seamless insurance
           </p>
           <p className='sub-text'>
