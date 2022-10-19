@@ -14,18 +14,24 @@
     }
   }
 
-  //   &-brands-container {
-  //     height: 3.125rem;
+  &-brands-container {
+    height: 3.125rem;
+    margin-top: 4rem;
 
-  //     &-brand {
-  //       width: 8rem;
-  //       height: 100%;
-  //     }
+    &-brand {
+      width: 8rem;
+      height: 2.6rem;
+      object-fit: contain;
 
-  //     @include md {
-  //       height: 4.93rem;
-  //     }
-  //   }
+      @include md {
+        height: 3.3rem;
+      }
+    }
+
+    @include md {
+      // height: 4.93rem;
+    }
+  }
 
   @include sm {
     padding: 0 3.25rem;
