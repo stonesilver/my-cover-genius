@@ -1,0 +1,182 @@
+@import '../../../scss/media-queries';
+@import '../../../scss/variables';
+
+.get-insurance {
+  margin-top: 4.3rem;
+  padding: 2rem;
+  background-color: $gray-900;
+  box-shadow: 0px 10px 51px #2d303799;
+
+  &-intro {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: $primary-green;
+    text-align: center;
+
+    @include sm {
+      text-align: left;
+      font-size: 0.875rem;
+    }
+
+    @include md {
+      font-size: 1.25rem;
+    }
+  }
+
+  &-title {
+    font-size: 1.375rem;
+    font-weight: 800;
+    color: $white;
+    margin-top: 2rem;
+
+    @include sm {
+      font-size: 2.175rem;
+      font-weight: 900;
+    }
+
+    @include md {
+      font-size: 2.5rem;
+      max-width: 41.69rem;
+      line-height: 45.5px;
+      margin-top: 3.81rem;
+    }
+  }
+
+  &-sub-text {
+    font-size: 0.875rem;
+    color: $white;
+    line-height: 17px;
+    margin-top: 1rem;
+
+    @include sm {
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 24px;
+      margin-top: 1.28rem;
+    }
+
+    @include lg {
+      max-width: 50.5rem;
+    }
+  }
+
+  &-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.125rem;
+    margin-top: 3rem;
+
+    &-left {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      &-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 2.625rem;
+
+        @include sm {
+          grid-template-columns: 1fr;
+          gap: 3rem;
+        }
+
+        @include md {
+          padding-bottom: 0;
+          margin-top: 0;
+        }
+
+        &-card {
+          display: flex;
+          gap: 1.5rem;
+
+          &-icon {
+            width: 2.875rem;
+            height: 2.875rem;
+            object-fit: contain;
+
+            @include sm {
+              width: 5rem;
+              height: 5rem;
+            }
+          }
+
+          &-body {
+            &-title {
+              font-size: 0.875rem;
+              font-weight: 600;
+              color: $white;
+
+              @include sm {
+                font-size: 1.25rem;
+              }
+            }
+            &-desc {
+              font-size: 0.75rem;
+              color: $white;
+              margin-top: 5px;
+
+              @include sm {
+                font-size: 0.875rem;
+                margin-top: 8px;
+              }
+            }
+
+            &-link {
+              display: flex;
+              gap: 0.625rem;
+              font-size: 0.75rem;
+              font-weight: 600;
+              color: $primary-green;
+              margin-top: 1rem;
+
+              @include sm {
+                font-size: 0.875rem;
+                margin-top: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-right {
+      height: 100%;
+
+      &-masked-img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+
+        @include sm {
+        }
+      }
+    }
+
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 3.68rem;
+    }
+  }
+
+  @include sm {
+    margin: 0 3.25rem;
+    border-radius: 12px;
+  }
+
+  @include md {
+    margin: 0 2.25rem;
+    margin-top: 6.25rem;
+}
+
+  @include lg {
+    margin: 0 6.25rem;
+    padding: 4rem;
+  }
+
+  @include xxl {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}

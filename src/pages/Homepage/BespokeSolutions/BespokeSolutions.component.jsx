@@ -2,7 +2,7 @@ import './BespokeSolutions.styles.scss';
 
 const items = ['Plans', 'Claim', 'Beneficiaries', 'Wallet'];
 
-export const BespokeSolutions = () => {
+const BespokeSolutions = () => {
   return (
     <div className='bespoke-solutions'>
       <p className='bespoke-solutions-intro'>Bespoke solutions</p>
@@ -29,9 +29,15 @@ export const BespokeSolutions = () => {
               A host of innovative plans for every aspect of your business
             </li>
           </ul>
-          <img src='/img/Mask1.webp' alt='mask banner' className='bespoke-solutions-grid-right-masked' />
+          <img
+            src='/img/Mask1.webp'
+            alt='mask banner'
+            className='bespoke-solutions-grid-right-masked'
+          />
         </div>
       </div>
     </div>
   );
 };
+
+export default BespokeSolutions;
