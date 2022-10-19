@@ -5,6 +5,7 @@ import BespokeSolutions from './BespokeSolutions/BespokeSolutions.component';
 import Brands from './Brands/Brands.component';
 import ClaimsAssessments from './ClaimsAssessments/ClaimsAssessments.component';
 import CoCreatingSolution from './CoCreatingSolution/CoCreatingSolution.component';
+import Faq from './Faq/Faq.component';
 import GetInsurance from './GetInsurance/GetInsurance.component';
 
 const Homepage = () => {
@@ -18,6 +19,7 @@ const Homepage = () => {
       <ClaimsAssessments />
       <GetInsurance />
       <CoCreatingSolution />
+      <Faq />
     </>
   );
 };

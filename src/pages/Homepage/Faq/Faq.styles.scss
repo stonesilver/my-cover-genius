@@ -1,0 +1,120 @@
+@import '../../../scss/media-queries';
+@import '../../../scss/variables';
+
+.faq {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-top: 4.3rem;
+  background-color: #f8fcfb;
+  padding: 3rem 1.25rem;
+
+  &-left {
+    &-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      line-height: 2rem;
+      color: $primary;
+
+      @include sm {
+        font-size: 2.5rem;
+        font-weight: 900;
+        line-height: 2.75rem;
+      }
+    }
+
+    &-btns {
+      display: flex;
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+  }
+
+  &-right {
+    &-card {
+      padding: 0.765rem 0.75rem;
+      border-bottom: 1px solid #d0d5dd;
+
+      &:last-child {
+        border-bottom: 1px solid transparent;
+      }
+
+      @include sm {
+        padding: 1.5rem;
+      }
+
+      &.active {
+        background-color: #e6f4f2;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.18);
+        border-bottom: 1px solid transparent;
+      }
+
+      &-question-and-icon {
+        display: flex;
+        align-items: center;
+
+        &-question {
+          flex: 1;
+          font-size: 0.875rem;
+          font-weight: 600;
+          color: $gray-800;
+
+          @include sm {
+            font-size: 1.125rem;
+          }
+        }
+
+        &-icon {
+          transform: rotate(180deg);
+          transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+          padding: 0.75rem;
+          cursor: pointer;
+
+          &.rotate {
+            transform: rotate(0deg);
+          }
+        }
+      }
+
+      &-answer {
+        font-size: 0.75rem;
+        line-height: 1.115rem;
+        color: $gray-700;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+        &.active {
+          margin-top: 1rem;
+          max-height: 700px;
+        }
+
+        @include sm {
+          font-size: 0.875rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+
+  @include sm {
+    padding: 3rem 3.25rem;
+  }
+
+  @include md {
+    padding: 3rem 2.25rem;
+    margin-top: 6.25rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  @include lg {
+    padding: 3rem 6.25rem;
+  }
+
+  @include xxl {
+    max-width: 1600px;
+    margin: 6.25rem auto 0 auto;
+  }
+}
