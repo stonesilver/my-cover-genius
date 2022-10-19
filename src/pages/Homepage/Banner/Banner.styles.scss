@@ -128,4 +128,8 @@
       }
     }
   }
+
+  @include md {
+    margin-top: 6.25rem;
+  }
 }

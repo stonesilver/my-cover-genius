@@ -25,4 +25,8 @@
   //       height: 4.93rem;
   //     }
   //   }
+
+  @include md {
+    margin-top: 6.25rem;
+  }
 }

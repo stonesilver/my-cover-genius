@@ -3,6 +3,7 @@ import Banner from './Banner/Banner.component';
 import BespokePlans from './BespokePlans/BespokePlans.component';
 import { BespokeSolutions } from './BespokeSolutions/BespokeSolutions.component';
 import Brands from './Brands/Brands.component';
+import ClaimsAssessments from './ClaimsAssessments/ClaimsAssessments.component';
 
 const Homepage = () => {
   return (
@@ -12,6 +13,7 @@ const Homepage = () => {
       <AllRoundInsurance />
       <BespokeSolutions />
       <BespokePlans />
+      <ClaimsAssessments />
     </div>
   );
 };

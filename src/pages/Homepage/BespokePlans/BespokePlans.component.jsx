@@ -80,7 +80,7 @@ const BespokePlans = () => {
           </div>
         ) : (
           <div className='bespoke-plans-content-display-others'>
-            <h4>STILL UNDER DEVELOPMENT</h4>
+            <h4>STILL IN DEVELOPMENT</h4>
           </div>
         )}
       </div>

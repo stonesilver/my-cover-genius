@@ -1,7 +1,7 @@
 @import '../../../scss/media-queries';
 @import '../../../scss/variables';
 
-.bespoke-solutions {
+.claims-assessments {
   margin-top: 4.3rem;
 
   &-intro {
@@ -39,33 +39,38 @@
     }
   }
 
+  &-sub-text {
+    font-size: 0.875rem;
+    color: $gray-600;
+    line-height: 17px;
+    margin-top: 1rem;
+
+    @include sm {
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 24px;
+      margin-top: 1.28rem;
+    }
+
+    @include lg {
+      max-width: 50.5rem;
+    }
+  }
+
   &-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 3.125rem;
+    margin-top: 3rem;
 
     &-left {
       display: flex;
       justify-content: space-between;
       flex-direction: column;
 
-      &-sub-text {
-        font-size: 0.875rem;
-        color: $gray-600;
-        line-height: 17px;
-        margin-top: 1rem;
-
-        @include sm {
-          font-size: 1.125rem;
-          font-weight: 500;
-          line-height: 24px;
-          margin-top: 1.28rem;
-        }
-      }
-
       &-row {
         display: grid;
-        grid-template-columns: repeat(4, 6.875rem);
+        grid-template-columns: repeat(4, auto);
         gap: 1.5rem;
         max-width: calc(100vw - 3.5rem);
         overflow: auto;
@@ -85,37 +90,78 @@
 
         &-item {
           display: flex;
-          align-items: center;
-          width: 6.875rem;
+          flex-direction: column;
+          justify-content: center;
+          width: max-content;
           height: 1.9rem;
-          font-size: 0.875rem;
-          font-weight: 500;
-          color: $gray-800;
-          border-left: 2.7px solid $primary;
-          box-shadow: 0px 4px 4px #00000014;
-          padding-left: 0.75rem;
+          padding: 0 0.75rem;
+          border-radius: 4px;
+
+          &-title {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: $gray-800;
+
+            @include sm {
+              font-size: 1.125rem;
+            }
+          }
+
+          &-desc {
+            display: none;
+            font-size: 0.875rem;
+
+            @include sm {
+              display: block;
+            }
+          }
 
           &:first-child {
-            border-color: #7a5af8;
+            background-color: $primary-green;
+            color: $white;
+
+            @include sm {
+              background-color: $white;
+              color: $primaryBlack;
+              border-color: #6938ef;
+            }
           }
 
           &:nth-child(2) {
-            border-color: #fcceee;
+            background-color: $gray-100;
+
+            @include sm {
+              background-color: $white;
+              border-left-style: dashed;
+              border-color: #d0d5dd;
+            }
           }
 
           &:nth-child(3) {
-            border-color: #b2ddff;
+            background-color: $gray-100;
+
+            @include sm {
+              background-color: $white;
+              border-left-style: dashed;
+              border-color: #d0d5dd;
+            }
           }
 
           &:nth-child(4) {
-            border-color: #a6f4c5;
+            background-color: $gray-100;
+
+            @include sm {
+              background-color: $white;
+              border-left-style: dashed;
+              border-color: #d0d5dd;
+            }
           }
 
           @include sm {
             width: 19.875rem;
-            height: 3.43rem;
-            font-size: 1.125rem;
-            border-left: 5px solid $primary;
+            height: auto;
+            min-height: 3.63rem;
+            border-left: 4px solid;
             padding-left: 1.875rem;
           }
         }
@@ -127,24 +173,9 @@
       background-color: #f8fcfb;
       padding: 1.625rem;
 
-      &-unordered {
-        padding: 0;
-        margin: 0;
-
-        &-item {
-          font-size: 0.75rem;
-          color: $primary-green;
-
-          @include sm {
-            font-size: 1.125rem;
-          }
-        }
-      }
-
       &-masked {
         width: 100%;
         object-fit: contain;
-        margin-top: 1rem;
 
         @include md {
           height: 23.5rem;
@@ -154,6 +185,7 @@
 
     @include md {
       grid-template-columns: repeat(2, 1fr);
+      margin-top: 1.68rem;
     }
   }
 

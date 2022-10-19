@@ -21,6 +21,7 @@
     text-align: center;
     color: primary;
     line-height: 26px;
+    margin-top: 2rem;
 
     @include sm {
       font-size: 2.175rem;
@@ -32,6 +33,7 @@
       max-width: 54.687rem;
       margin: 0 auto;
       line-height: 61px;
+      margin-top: 3.81rem;
     }
   }
 
@@ -154,5 +156,9 @@
     @include md {
       margin-top: 3.1rem;
     }
+  }
+
+  @include md {
+    margin-top: 6.25rem;
   }
 }
