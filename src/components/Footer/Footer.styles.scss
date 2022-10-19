@@ -1,0 +1,127 @@
+@import '../../scss/media-queries';
+@import '../../scss/variables';
+
+.footer {
+  margin-top: 6.3rem;
+  padding: 0 1.25rem 0 1.25rem;
+  background-color: $white;
+
+  &-nav-category {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.875rem;
+    margin-top: 4rem;
+
+    &-location {
+      grid-area: 3/1 / span 1 / span 2;
+
+      @include md {
+        grid-area: auto;
+      }
+
+      &-flex-card {
+        display: flex;
+        gap: 0.5rem;
+        // font-size: 0.75rem;
+
+        &-title {
+          //   font-size: 1rem;
+          font-weight: 600;
+        }
+      }
+
+      &-socials {
+        display: flex;
+        gap: 1rem;
+
+        &-icon {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+
+    &-company {
+      grid-area: 1/1;
+
+      @include md {
+        grid-area: auto;
+      }
+    }
+
+    &-products {
+      grid-area: 1/2;
+
+      @include md {
+        grid-area: auto;
+      }
+    }
+
+    .nav-link-category {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      font-size: 0.75rem;
+      //   border: 1px solid $primary;
+
+      @include md {
+        font-size: 1rem;
+        margin: 0 auto;
+      }
+
+      &-title {
+        font-size: 1rem;
+        font-weight: 700;
+        color: $gray-700;
+        padding: 0;
+        margin: 0;
+
+        @include sm {
+          font-size: 1.25rem;
+        }
+      }
+
+      &-link {
+        cursor: pointer;
+
+        &:hover {
+          color: $primary-green;
+        }
+      }
+    }
+
+    @include md {
+      grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+      gap: 0;
+    }
+  }
+
+  &-tag {
+    font-size: 0.75rem;
+    color: $gray-700;
+    margin-top: 2.25rem;
+
+    @include md {
+      font-size: 0.875rem;
+      margin-top: 6.25rem;
+    }
+  }
+
+  @include sm {
+    padding: 0 3.25rem 0 3.25rem;
+  }
+
+  @include md {
+    padding: 0 2.25rem 0 2.25rem;
+    margin-top: 6.25rem;
+  }
+
+  @include lg {
+    padding: 0 6.25rem 0 6.25rem;
+  }
+
+  @include xxl {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
