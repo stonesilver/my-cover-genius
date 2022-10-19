@@ -3,4 +3,156 @@
 
 .bespoke-plans {
   margin-top: 4.3rem;
+
+  &-intro {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: $primary-green;
+    text-align: center;
+
+    @include sm {
+      font-size: 1.25rem;
+    }
+  }
+
+  &-title {
+    font-size: 1.375rem;
+    font-weight: 800;
+    text-align: center;
+    color: primary;
+    line-height: 26px;
+
+    @include sm {
+      font-size: 2.175rem;
+      line-height: 51px;
+    }
+
+    @include md {
+      font-size: 3.375rem;
+      max-width: 54.687rem;
+      margin: 0 auto;
+      line-height: 61px;
+    }
+  }
+
+  &-sub-text {
+    font-size: 0.875rem;
+    color: $gray-600;
+    text-align: center;
+    margin-top: 0.75rem;
+
+    @include sm {
+      font-size: 1.125rem;
+      font-weight: 500;
+    }
+
+    @include md {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+    }
+  }
+
+  &-breadcrumb-btn {
+    display: flex;
+    gap: 0.7rem;
+    max-width: fit-content;
+    margin: 0 auto;
+    margin-top: 2.375rem;
+
+    @include sm {
+      gap: 1rem;
+      margin-top: 4.5rem;
+    }
+
+    .action-btn {
+      font-size: 0.875rem;
+
+      @include sm {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &-content-display {
+    margin-top: 1.625rem;
+
+    &-auto {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.125rem;
+      overflow: auto;
+
+      &-card {
+        min-width: 14.5rem;
+        height: fit-content;
+        flex: 1;
+        background-color: $white;
+        border: 1px solid #dbdfe4;
+        border-radius: 4px;
+        padding: 1.125rem 1.25rem;
+
+        &-title {
+          font-size: 0.875rem;
+          font-weight: 700;
+          color: $gray-600;
+          margin-left: 1rem;
+
+          @include sm {
+            font-size: 1rem;
+            margin-left: 1.25rem;
+          }
+        }
+
+        &-body {
+          font-size: 0.75rem;
+          color: $gray-600;
+          margin-top: 0.678rem;
+
+          @include sm {
+            font-size: 0.875rem;
+          }
+        }
+
+        &-link {
+          display: flex;
+          gap: 8px;
+          font-size: 0.75rem;
+          font-weight: 700;
+          color: $gray-600;
+          margin: 0.678rem 0 0 0;
+          cursor: pointer;
+
+          &:hover .right-arrow-icon {
+            transform: translateX(10px);
+          }
+
+          .right-arrow-icon {
+            transition: transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+          }
+
+          @include sm {
+            font-size: 0.875rem;
+          }
+        }
+
+        @include md {
+          padding: 1.56rem 1.375rem;
+        }
+      }
+    }
+
+    &-others {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 20vh;
+      border: 1px solid #dbdfe4;
+      border-radius: 4px;
+    }
+
+    @include md {
+      margin-top: 3.1rem;
+    }
+  }
 }
