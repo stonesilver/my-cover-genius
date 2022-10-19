@@ -29,7 +29,10 @@ const ClaimsAssessments = () => {
         <div className='claims-assessments-grid-left'>
           <div className='claims-assessments-grid-left-row'>
             {claims.map(({ title, desc }) => (
-              <div key={title} className='claims-assessments-grid-left-row-item'>
+              <div
+                key={title}
+                className='claims-assessments-grid-left-row-item'
+              >
                 <p className='claims-assessments-grid-left-row-item-title'>
                   {title}
                 </p>
@@ -43,11 +46,13 @@ const ClaimsAssessments = () => {
           </div>
         </div>
         <div className='claims-assessments-grid-right'>
-          <img
-            src='/img/IPhone-12.webp'
-            alt='mask banner'
-            className='claims-assessments-grid-right-masked'
-          />
+          <div className='claims-assessments-grid-right-masked-container'>
+            <img
+              src='/img/iphone.webp'
+              alt='mask banner'
+              className='claims-assessments-grid-right-masked-container-img'
+            />
+          </div>
         </div>
       </div>
     </div>

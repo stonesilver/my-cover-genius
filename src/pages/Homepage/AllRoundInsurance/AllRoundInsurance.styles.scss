@@ -3,6 +3,7 @@
 
 .all-round-insurance {
   margin-top: 4.3rem;
+  padding: 0 1.25rem;
 
   &-heading {
     text-align: center;
@@ -90,7 +91,21 @@
     }
   }
 
+  @include sm {
+    padding: 0 3.25rem;
+  }
+
   @include md {
+    padding: 0 2.25rem;
     margin-top: 6.25rem;
+  }
+
+  @include lg {
+    padding: 0 6.25rem;
+  }
+
+  @include xxl {
+    max-width: 1600px;
+    margin: 0 auto;
   }
 }

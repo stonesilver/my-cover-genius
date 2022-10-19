@@ -2,7 +2,11 @@
 @import '../../../scss/variables';
 
 .claims-assessments {
+  position: relative;
   margin-top: 4.3rem;
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+  background-color: #f8fcfb;
+  padding: 6rem 1.25rem;
 
   &-intro {
     font-size: 0.75rem;
@@ -65,7 +69,7 @@
 
     &-left {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       flex-direction: column;
 
       &-row {
@@ -98,9 +102,8 @@
           border-radius: 4px;
 
           &-title {
-            font-size: 0.875rem;
+            font-size: 0.75rem;
             font-weight: 500;
-            color: $gray-800;
 
             @include sm {
               font-size: 1.125rem;
@@ -121,39 +124,24 @@
             color: $white;
 
             @include sm {
-              background-color: $white;
+              background-color: transparent;
               color: $primaryBlack;
               border-color: #6938ef;
             }
           }
 
-          &:nth-child(2) {
-            background-color: $gray-100;
-
-            @include sm {
-              background-color: $white;
-              border-left-style: dashed;
-              border-color: #d0d5dd;
-            }
-          }
-
-          &:nth-child(3) {
-            background-color: $gray-100;
-
-            @include sm {
-              background-color: $white;
-              border-left-style: dashed;
-              border-color: #d0d5dd;
-            }
-          }
-
+          &:nth-child(2),
+          &:nth-child(3),
           &:nth-child(4) {
             background-color: $gray-100;
+            color: $gray-500;
 
             @include sm {
-              background-color: $white;
+              background-color: transparent;
+              color: #98a2b3;
               border-left-style: dashed;
               border-color: #d0d5dd;
+              justify-content: flex-end;
             }
           }
 
@@ -162,6 +150,7 @@
             height: auto;
             min-height: 3.63rem;
             border-left: 4px solid;
+            border-radius: 0;
             padding-left: 1.875rem;
           }
         }
@@ -170,15 +159,28 @@
 
     &-right {
       height: 100%;
-      background-color: #f8fcfb;
-      padding: 1.625rem;
 
-      &-masked {
-        width: 100%;
+      &-masked-container {
+        display: flex;
+        justify-content: center;
+        background-color: #e6f4f2;
+        width: 20rem;
+        height: 20rem;
         object-fit: contain;
+        border-radius: 50%;
+        margin: 0 auto;
+        padding-top: 2rem;
+        overflow: hidden;
 
-        @include md {
-          height: 23.5rem;
+        @include sm {
+          width: 25.5rem;
+          height: 25.5rem;
+          padding-top: 4rem;
+        }
+
+        &-img {
+          width: 15rem;
+          margin-left: 1.5rem;
         }
       }
     }
@@ -189,7 +191,29 @@
     }
   }
 
+  @include sm {
+    padding: 6rem 3.25rem;
+  }
+
   @include md {
+    padding: 6rem 2.25rem;
     margin-top: 6.25rem;
+    clip-path: polygon(0 0, 100% 8%, 100% 100%, 0% 100%);
+  }
+
+  @include lg {
+    padding: 6rem 6.25rem;
+    clip-path: polygon(0 0, 100% 25%, 100% 100%, 0% 100%);
+  }
+
+  @include xxl {
+    max-width: 1600px;
+    margin: 6.25rem auto 0 auto;
+  }
+
+  @include md {
+  }
+
+  @include lg {
   }
 }
