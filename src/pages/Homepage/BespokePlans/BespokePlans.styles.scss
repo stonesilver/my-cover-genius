@@ -140,6 +140,12 @@
         }
 
         @include md {
+          min-width: 17.5rem;
+          padding: 1.56rem 1.375rem;
+        }
+
+        @include lg {
+          min-width: auto;
           padding: 1.56rem 1.375rem;
         }
       }
