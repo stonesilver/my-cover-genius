@@ -34,27 +34,73 @@ const Banner = () => {
                 className='center-image'
               />
               <div className='indicator'>
-                <div className="indicator-pointer"></div>
+                <div className='indicator-pointer'></div>
               </div>
             </div>
             <div className='service-box gadget-cover'>
               <GadgetIcon className='icon gadget-icon' />
-              <p className="gadget-cover-text">Gadget Cover</p>
+              <div className='service-label' label='Gadget Cover'>
+                <img
+                  src='/img/arrow-left.png'
+                  alt='direction arrow'
+                  className='arrow-bg'
+                />
+              </div>
             </div>
+
             <div className='service-box health-cover'>
               <HealthIcon className='icon health-icon' />
+              <div className='service-label' label='Health Cover'>
+                <img
+                  src='/img/arrow-left.png'
+                  alt='direction arrow'
+                  className='arrow-bg'
+                />
+              </div>
             </div>
+
             <div className='service-box logistic-cover'>
               <LogisticsIcon className='icon logitics-icon' />
+              <div className='service-label' label='Logistic Cover'>
+                <img
+                  src='/img/arrow-left.png'
+                  alt='direction arrow'
+                  className='arrow-bg'
+                />
+              </div>
             </div>
+
             <div className='service-box travel-cover'>
               <TravelIcon className='icon travel-icon' />
+              <div className='service-label auto-label' label='Travel Cover'>
+                <img
+                  src='/img/arrow-right.png'
+                  alt='direction arrow'
+                  className='arrow-bg'
+                />
+              </div>
             </div>
+
             <div className='service-box office-content'>
               <OfficeContentIcon className='icon office-icon' />
+              <div className='service-label auto-label' label='Office Content'>
+                <img
+                  src='/img/arrow-right.png'
+                  alt='direction arrow'
+                  className='arrow-bg'
+                />
+              </div>
             </div>
+
             <div className='service-box auto'>
               <AutoIcon className='icon auto-icon' />
+              <div className='service-label auto-label' label='Auto Cover'>
+                <img
+                  src='/img/arrow-right.png'
+                  alt='direction arrow'
+                  className='arrow-bg'
+                />
+              </div>
             </div>
           </div>
         </Col>

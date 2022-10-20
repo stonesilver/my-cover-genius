@@ -4,6 +4,7 @@
 .homepage-banner {
   margin-top: 4.3rem;
   padding: 0 1.25rem;
+  overflow: hidden;
 
   .banner-text {
     .bold-text {
@@ -70,7 +71,7 @@
       height: 17.18rem;
       border: 1px solid $gray-100;
       border-radius: 50%;
-      margin: 0 auto;
+      margin: 0.75rem auto;
 
       @include sm {
         width: 22.68rem;
@@ -108,44 +109,32 @@
           animation: rotate 25s linear infinite;
 
           @keyframes rotate {
-            // 0% {
-            //   transform: rotate(55deg);
-            // }
-            // 20% {
-            //   transform: rotate(75deg);
-            // }
-            // 40% {
-            //   transform: rotate(90deg);
-            // }
-            // 60% {
-            //   transform: rotate(180deg);
-            // }
-            // 80% {
-            //   transform: rotate(270deg);
-            // }
-            // 100% {
-            //   transform: rotate(360deg);
-            // }
             0% {
-              transform: rotate(0deg)
+              transform: rotate(0deg);
             }
-            5.55%, 16.66% {
-              transform: rotate(60deg)
+            5.55%,
+            16.66% {
+              transform: rotate(60deg);
             }
-            22.21%, 33.32% {
-              transform: rotate(120deg)
+            22.21%,
+            33.32% {
+              transform: rotate(120deg);
             }
-            38.87%, 49.98% {
-              transform: rotate(180deg)
+            38.87%,
+            49.98% {
+              transform: rotate(180deg);
             }
-            55.53%, 66.64% {
-              transform: rotate(240deg)
+            55.53%,
+            66.64% {
+              transform: rotate(240deg);
             }
-            72.19%, 83.3% {
-              transform: rotate(300deg)
+            72.19%,
+            83.3% {
+              transform: rotate(300deg);
             }
-            88.85%, 100% {
-              transform: rotate(360deg)
+            88.85%,
+            100% {
+              transform: rotate(360deg);
             }
           }
 
@@ -159,7 +148,6 @@
             width: 4rem;
             height: 2.7px;
             transform: rotate(90deg);
-            // transform-origin: right;
             background-color: $primary-green;
 
             &:after {
@@ -208,26 +196,64 @@
           }
         }
 
+        .service-label {
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: translate(50%, 20%);
+
+          .arrow-bg {
+            width: 6.5rem;
+
+            @include sm {
+              width: 8rem;
+            }
+          }
+
+          &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            content: '' attr(label) '';
+            font-size: 0.625rem;
+            transform: translate(-25%, 50%);
+
+            @include sm {
+              font-size: 0.75rem;
+            }
+          }
+        }
+
+        .auto-label {
+          top: 0;
+          left: 0;
+          transform: translate(-100%, 20%);
+        }
+
         &.gadget-cover {
           top: -1.375rem;
 
           .gadget-icon {
-            fill: $yellow !important;
+            filter: hue-rotate(100deg);
           }
 
-          .gadget-cover-text {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: max-content;
-            background-color: $white;
-            color: $primary;
-            border: 0.1px solid #439687;
-            box-shadow: 0px 2px 4px #00000014;
-            transform: translateX(4rem);
-            clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-            padding: 0.3rem 1rem;
-          }
+          // .service-label {
+          //   position: absolute;
+          //   top: 0;
+          //   left: 0;
+          //   // width: max-content;
+          //   // color: $primary;
+          //   transform: translate(50%, 20%);
+          //   // transform: translateX(4rem);
+
+          //   &::after {
+          //     position: absolute;
+          //     top: 0;
+          //     right: 0;
+          //     content: ''attr(label)'';
+          //     transform: translate(-25%, 50%);
+          //   }
+          // }
 
           @include sm {
             top: -2.06rem;
