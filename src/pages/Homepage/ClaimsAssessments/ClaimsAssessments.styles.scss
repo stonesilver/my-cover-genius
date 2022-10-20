@@ -179,8 +179,13 @@
         }
 
         &-img {
-          width: 15rem;
-          margin-left: 1.5rem;
+          width: 12rem;
+          margin-left: 1.7rem;
+          object-fit: contain;
+
+          @include sm {
+            width: 15rem;
+          }
         }
       }
     }

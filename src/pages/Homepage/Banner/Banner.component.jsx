@@ -33,26 +33,28 @@ const Banner = () => {
                 alt='center'
                 className='center-image'
               />
-              <div className='indicator'></div>
+              <div className='indicator'>
+                <div className="indicator-pointer"></div>
+              </div>
             </div>
             <div className='service-box gadget-cover'>
-              <GadgetIcon className='gadget-icon' />
+              <GadgetIcon className='icon gadget-icon' />
               <p className="gadget-cover-text">Gadget Cover</p>
             </div>
             <div className='service-box health-cover'>
-              <HealthIcon className='health-icon' />
+              <HealthIcon className='icon health-icon' />
             </div>
             <div className='service-box logistic-cover'>
-              <LogisticsIcon className='logitics-icon' />
+              <LogisticsIcon className='icon logitics-icon' />
             </div>
             <div className='service-box travel-cover'>
-              <TravelIcon className='travel-icon' />
+              <TravelIcon className='icon travel-icon' />
             </div>
             <div className='service-box office-content'>
-              <OfficeContentIcon className='office-icon' />
+              <OfficeContentIcon className='icon office-icon' />
             </div>
             <div className='service-box auto'>
-              <AutoIcon className='auto-icon' />
+              <AutoIcon className='icon auto-icon' />
             </div>
           </div>
         </Col>
