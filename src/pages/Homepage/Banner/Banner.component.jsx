@@ -50,7 +50,7 @@ const Banner = () => {
 
             <div className='service-box health-cover'>
               <HealthIcon className='icon health-icon' />
-              <div className='service-label' label='Health Cover'>
+              <div className='service-label health-label' label='Health Cover'>
                 <img
                   src='/img/arrow-left.png'
                   alt='direction arrow'
@@ -72,7 +72,7 @@ const Banner = () => {
 
             <div className='service-box travel-cover'>
               <TravelIcon className='icon travel-icon' />
-              <div className='service-label auto-label' label='Travel Cover'>
+              <div className='service-label left-label' label='Travel Cover'>
                 <img
                   src='/img/arrow-right.png'
                   alt='direction arrow'
@@ -83,7 +83,7 @@ const Banner = () => {
 
             <div className='service-box office-content'>
               <OfficeContentIcon className='icon office-icon' />
-              <div className='service-label auto-label' label='Office Content'>
+              <div className='service-label left-label' label='Office Content'>
                 <img
                   src='/img/arrow-right.png'
                   alt='direction arrow'
@@ -94,7 +94,7 @@ const Banner = () => {
 
             <div className='service-box auto'>
               <AutoIcon className='icon auto-icon' />
-              <div className='service-label auto-label' label='Auto Cover'>
+              <div className='service-label left-label' label='Auto Cover'>
                 <img
                   src='/img/arrow-right.png'
                   alt='direction arrow'

@@ -180,6 +180,16 @@
         box-shadow: 0px 4px 18px #0b0b0c24;
         border-radius: 50%;
 
+        &:hover .service-label {
+          transform: translate(50%, 20%);
+          opacity: 1;
+        }
+
+        &:hover .left-label {
+          transform: translate(-100%, 20%);
+          opacity: 1;
+        }
+
         @include sm {
           width: 4.125rem;
           height: 4.125rem;
@@ -200,7 +210,33 @@
           position: absolute;
           top: 0;
           left: 0;
-          transform: translate(50%, 20%);
+          transform: translate(0, 20%);
+          opacity: 0;
+          transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          animation: right 25s linear infinite;
+
+          @keyframes right {
+            0% {
+              transform: translate(0, 20%);
+              opacity: 0;
+            }
+
+            2%,
+            10% {
+              transform: translate(50%, 20%);
+              opacity: 1;
+            }
+            15%,
+            18% {
+              transform: translate(0, 20%);
+              opacity: 0;
+            }
+
+            19%, 100% {
+              transform: translate(0, 20%);
+              opacity: 0;
+            }
+          }
 
           .arrow-bg {
             width: 6.5rem;
@@ -224,36 +260,27 @@
           }
         }
 
-        .auto-label {
+        .left-label {
           top: 0;
           left: 0;
-          transform: translate(-100%, 20%);
+          transform: translate(-50%, 20%);
+          transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          animation: left 2s linear infinite;
+
+          @keyframes left {
+            100% {
+              transform: translate(-100%, 20%);
+              opacity: 1;
+            }
+          }
+        }
+
+        .health-label {
+          animation-delay: 0.5s;
         }
 
         &.gadget-cover {
           top: -1.375rem;
-
-          .gadget-icon {
-            filter: hue-rotate(100deg);
-          }
-
-          // .service-label {
-          //   position: absolute;
-          //   top: 0;
-          //   left: 0;
-          //   // width: max-content;
-          //   // color: $primary;
-          //   transform: translate(50%, 20%);
-          //   // transform: translateX(4rem);
-
-          //   &::after {
-          //     position: absolute;
-          //     top: 0;
-          //     right: 0;
-          //     content: ''attr(label)'';
-          //     transform: translate(-25%, 50%);
-          //   }
-          // }
 
           @include sm {
             top: -2.06rem;
