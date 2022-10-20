@@ -1,13 +1,11 @@
 import './Hamburger.styles.css';
 
-const Hamburger = () => {
+const Hamburger = ({ open, toggleMobileMenu }) => {
   return (
-    <label htmlFor='check' className='bar'>
-      <input id='check' type='checkbox' />
-
-      <span className='top'></span>
-      <span className='middle'></span>
-      <span className='bottom'></span>
+    <label htmlFor='check' className='bar' onClick={toggleMobileMenu}>
+      <span className={`top ${open ? 'top-active' : ''}`}></span>
+      <span className={`middle ${open ? 'middle-active' : ''}`}></span>
+      <span className={`bottom ${open ? 'bottom-active' : ''}`}></span>
     </label>
   );
 };
