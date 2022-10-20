@@ -181,6 +181,21 @@
         box-shadow: 0px 4px 18px #0b0b0c24;
         border-radius: 50%;
 
+        &::after {
+          position: absolute;
+          content: '';
+          width: 3.6rem;
+          height: 3.6rem;
+          border-radius: 50%;
+          border: 1px solid $gray-100;
+
+          @include sm {
+            width: 4.9rem;
+            height: 4.9rem;
+            font-size: 0.875rem;
+          }
+        }
+
         @include sm {
           width: 4.125rem;
           height: 4.125rem;
@@ -188,8 +203,8 @@
         }
 
         .icon {
-          width: 1.125rem;
-          height: 1rem;
+          width: 1.25rem;
+          height: 1.15rem;
           animation: hue 25s linear infinite;
 
           // keyframe for icon color change
