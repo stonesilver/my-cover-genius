@@ -82,7 +82,7 @@
     &-auto {
       width: 100%;
       display: grid;
-      grid-template-columns: repeat(4, auto);
+      grid-template-columns: repeat(4, 1fr);
       align-items: stretch;
       gap: 1.125rem;
       overflow: auto;
