@@ -180,16 +180,6 @@
         box-shadow: 0px 4px 18px #0b0b0c24;
         border-radius: 50%;
 
-        &:hover .service-label {
-          transform: translate(50%, 20%);
-          opacity: 1;
-        }
-
-        &:hover .left-label {
-          transform: translate(-100%, 20%);
-          opacity: 1;
-        }
-
         @include sm {
           width: 4.125rem;
           height: 4.125rem;
@@ -199,6 +189,28 @@
         .icon {
           width: 1.125rem;
           height: 1rem;
+          animation: hue 25s linear infinite;
+
+          @keyframes hue {
+            0% {
+              filter: hue-rotate(0deg);
+            }
+
+            5%,
+            15% {
+              filter: hue-rotate(120deg);
+            }
+
+            20%,
+            35% {
+              filter: hue-rotate(0deg);
+            }
+
+            19%,
+            100% {
+              filter: hue-rotate(0deg);
+            }
+          }
 
           @include sm {
             width: 2rem;
@@ -212,7 +224,6 @@
           left: 0;
           transform: translate(0, 20%);
           opacity: 0;
-          transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           animation: right 25s linear infinite;
 
           @keyframes right {
@@ -221,18 +232,20 @@
               opacity: 0;
             }
 
-            2%,
-            10% {
+            5%,
+            15% {
               transform: translate(50%, 20%);
               opacity: 1;
             }
-            15%,
-            18% {
+
+            20%,
+            35% {
               transform: translate(0, 20%);
               opacity: 0;
             }
 
-            19%, 100% {
+            19%,
+            100% {
               transform: translate(0, 20%);
               opacity: 0;
             }
@@ -264,19 +277,82 @@
           top: 0;
           left: 0;
           transform: translate(-50%, 20%);
-          transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-          animation: left 2s linear infinite;
+          animation: left 25s linear infinite;
 
           @keyframes left {
-            100% {
+            0% {
+              transform: translate(-50%, 20%);
+              opacity: 0;
+            }
+
+            5%,
+            15% {
               transform: translate(-100%, 20%);
               opacity: 1;
+            }
+
+            20%,
+            35% {
+              transform: translate(-50%, 20%);
+              opacity: 0;
+            }
+
+            19%,
+            100% {
+              transform: translate(-50%, 20%);
+              opacity: 0;
             }
           }
         }
 
+        // labels animation delay
         .health-label {
           animation-delay: 0.5s;
+        }
+
+        .logistic-label {
+          animation-delay: 4.5s;
+        }
+
+        .travel-label {
+          animation-delay: 8.5s;
+        }
+
+        .office-label {
+          animation-delay: 13s;
+        }
+
+        .auto-label {
+          animation-delay: 17.5s;
+        }
+
+        .gadget-label {
+          animation-delay: 21.5s;
+        }
+
+        // icon animation delay 
+        .health-icon {
+          animation-delay: 0.5s;
+        }
+
+        .logistic-icon {
+          animation-delay: 4.5s;
+        }
+
+        .travel-icon {
+          animation-delay: 8.5s;
+        }
+
+        .office-icon {
+          animation-delay: 13s;
+        }
+
+        .auto-icon {
+          animation-delay: 17.5s;
+        }
+
+        .gadget-icon {
+          animation-delay: 21.5s;
         }
 
         &.gadget-cover {

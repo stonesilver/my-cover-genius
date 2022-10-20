@@ -39,7 +39,7 @@ const Banner = () => {
             </div>
             <div className='service-box gadget-cover'>
               <GadgetIcon className='icon gadget-icon' />
-              <div className='service-label' label='Gadget Cover'>
+              <div className='service-label gadget-label' label='Gadget Cover'>
                 <img
                   src='/img/arrow-left.png'
                   alt='direction arrow'
@@ -60,8 +60,11 @@ const Banner = () => {
             </div>
 
             <div className='service-box logistic-cover'>
-              <LogisticsIcon className='icon logitics-icon' />
-              <div className='service-label' label='Logistic Cover'>
+              <LogisticsIcon className='icon logistic-icon' />
+              <div
+                className='service-label logistic-label'
+                label='Logistic Cover'
+              >
                 <img
                   src='/img/arrow-left.png'
                   alt='direction arrow'
@@ -72,7 +75,10 @@ const Banner = () => {
 
             <div className='service-box travel-cover'>
               <TravelIcon className='icon travel-icon' />
-              <div className='service-label left-label' label='Travel Cover'>
+              <div
+                className='service-label left-label travel-label'
+                label='Travel Cover'
+              >
                 <img
                   src='/img/arrow-right.png'
                   alt='direction arrow'
@@ -83,7 +89,10 @@ const Banner = () => {
 
             <div className='service-box office-content'>
               <OfficeContentIcon className='icon office-icon' />
-              <div className='service-label left-label' label='Office Content'>
+              <div
+                className='service-label left-label office-label'
+                label='Office Content'
+              >
                 <img
                   src='/img/arrow-right.png'
                   alt='direction arrow'
@@ -94,7 +103,10 @@ const Banner = () => {
 
             <div className='service-box auto'>
               <AutoIcon className='icon auto-icon' />
-              <div className='service-label left-label' label='Auto Cover'>
+              <div
+                className='service-label left-label auto-label'
+                label='Auto Cover'
+              >
                 <img
                   src='/img/arrow-right.png'
                   alt='direction arrow'
