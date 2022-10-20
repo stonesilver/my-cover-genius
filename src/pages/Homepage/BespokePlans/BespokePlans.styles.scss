@@ -95,6 +95,26 @@
         border: 1px solid #dbdfe4;
         border-radius: 4px;
         padding: 1.125rem 1.25rem;
+        cursor: pointer;
+
+        &:hover .right-arrow-icon {
+          transform: translateX(10px);
+        }
+
+        &:hover .auto-icon {
+          filter: hue-rotate(120deg);
+        }
+
+        .auto-icon {
+          width: 1.25rem;
+          height: 1.25rem;
+          transition: transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+          @include sm {
+            width: 1.8rem;
+            height: 1.8rem;
+          }
+        }
 
         &-title {
           font-size: 0.875rem;
@@ -126,10 +146,6 @@
           color: $gray-600;
           margin: 0.678rem 0 0 0;
           cursor: pointer;
-
-          &:hover .right-arrow-icon {
-            transform: translateX(10px);
-          }
 
           .right-arrow-icon {
             transition: transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { ReactComponent as AutoIcon } from '../../../assets/svg/auto.svg';
 import Button from 'react-bootstrap/Button';
 import './BespokePlans.styles.scss';
 
@@ -56,11 +57,8 @@ const BespokePlans = () => {
                 key={title}
                 className='bespoke-plans-content-display-auto-card'
               >
-                <img
-                  src='/auto.svg'
-                  alt='auto'
-                  className='bespoke-plans-content-display-auto-card-icon'
-                />
+                <AutoIcon className='bespoke-plans-content-display-auto-card-icon auto-icon' />
+                
                 <span className='bespoke-plans-content-display-auto-card-title'>
                   {title}
                 </span>
