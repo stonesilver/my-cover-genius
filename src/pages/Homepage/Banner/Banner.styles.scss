@@ -105,26 +105,47 @@
           border-radius: 50%;
           box-shadow: 0px 2px 18px #0b0b0c14;
           transition: all 1s ease-in-out;
-          animation: rotate 5s linear infinite;
+          animation: rotate 25s linear infinite;
 
           @keyframes rotate {
+            // 0% {
+            //   transform: rotate(55deg);
+            // }
+            // 20% {
+            //   transform: rotate(75deg);
+            // }
+            // 40% {
+            //   transform: rotate(90deg);
+            // }
+            // 60% {
+            //   transform: rotate(180deg);
+            // }
+            // 80% {
+            //   transform: rotate(270deg);
+            // }
+            // 100% {
+            //   transform: rotate(360deg);
+            // }
             0% {
-              transform: rotate(55deg);
+              transform: rotate(0deg)
             }
-            20% {
-              transform: rotate(75deg);
+            5.55%, 16.66% {
+              transform: rotate(60deg)
             }
-            40% {
-              transform: rotate(90deg);
+            22.21%, 33.32% {
+              transform: rotate(120deg)
             }
-            60% {
-              transform: rotate(180deg);
+            38.87%, 49.98% {
+              transform: rotate(180deg)
             }
-            80% {
-              transform: rotate(270deg);
+            55.53%, 66.64% {
+              transform: rotate(240deg)
             }
-            100% {
-              transform: rotate(360deg);
+            72.19%, 83.3% {
+              transform: rotate(300deg)
+            }
+            88.85%, 100% {
+              transform: rotate(360deg)
             }
           }
 
