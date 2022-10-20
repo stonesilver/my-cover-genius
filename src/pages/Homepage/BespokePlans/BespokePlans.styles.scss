@@ -82,13 +82,14 @@
     &-auto {
       width: 100%;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, auto);
+      align-items: stretch;
       gap: 1.125rem;
       overflow: auto;
+      padding-bottom: 0.75rem;
 
       &-card {
         min-width: 14.5rem;
-        height: fit-content;
         flex: 1;
         background-color: $white;
         border: 1px solid #dbdfe4;
@@ -139,7 +140,7 @@
           }
         }
 
-        @include md {
+        @include sm {
           min-width: 17.5rem;
           padding: 1.56rem 1.375rem;
         }

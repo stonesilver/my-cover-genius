@@ -108,6 +108,7 @@
           transition: all 1s ease-in-out;
           animation: rotate 25s linear infinite;
 
+          // main pointer keyframe
           @keyframes rotate {
             0% {
               transform: rotate(0deg);
@@ -191,6 +192,7 @@
           height: 1rem;
           animation: hue 25s linear infinite;
 
+          // keyframe for icon color change
           @keyframes hue {
             0% {
               filter: hue-rotate(0deg);
@@ -226,6 +228,7 @@
           opacity: 0;
           animation: right 25s linear infinite;
 
+          // keyframes for labels on the right
           @keyframes right {
             0% {
               transform: translate(0, 20%);
@@ -273,12 +276,14 @@
           }
         }
 
+        // positioning of labels on the left
         .left-label {
           top: 0;
           left: 0;
           transform: translate(-50%, 20%);
           animation: left 25s linear infinite;
 
+          // keyframes for labels on the left
           @keyframes left {
             0% {
               transform: translate(-50%, 20%);
@@ -330,7 +335,7 @@
           animation-delay: 21.5s;
         }
 
-        // icon animation delay 
+        // icon animation delay
         .health-icon {
           animation-delay: 0.5s;
         }

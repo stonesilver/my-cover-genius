@@ -42,7 +42,7 @@ const BespokePlans = () => {
             onClick={() => setActiveTab(item)}
             className={`${
               activeTab === item ? 'text-white' : 'text-primaryBlack'
-            } px-md-4 action-btn`}
+            } px-3 px-md-4 action-btn`}
           >
             {item}
           </Button>
