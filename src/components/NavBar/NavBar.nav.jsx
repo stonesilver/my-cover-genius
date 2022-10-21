@@ -51,7 +51,7 @@ const NavBar = () => {
           </Button>
         </div>
         <Hamburger open={open} toggleMobileMenu={toggleMobileMenu} />
-        
+
         <div className={`mobile-nav ${!open ? 'zoom-out' : ''}`}>
           {['For Individuals', 'Plans', 'Claims'].map((link) => (
             <p key={link} className='mobile-nav-item'>

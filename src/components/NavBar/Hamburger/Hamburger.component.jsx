@@ -1,6 +1,7 @@
 import './Hamburger.styles.css';
 
 const Hamburger = ({ open, toggleMobileMenu }) => {
+
   return (
     <label htmlFor='check' className='bar' onClick={toggleMobileMenu}>
       <span className={`top ${open ? 'top-active' : ''}`}></span>

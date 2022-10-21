@@ -115,6 +115,7 @@
 
   @include xxl {
     max-width: 1600px;
-    margin: 6.25rem auto 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
