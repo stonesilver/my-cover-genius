@@ -37,14 +37,14 @@
 .top-active {
   transform: rotate(45deg);
   transform-origin: top left;
-  top: 9px;
+  top: 9px !important;
   left: 10px;
 }
 
 .bottom-active {
   transform: rotate(-45deg);
   transform-origin: top left;
-  bottom: 9px;
+  bottom: 9px !important;
 }
 
 .middle-active {
