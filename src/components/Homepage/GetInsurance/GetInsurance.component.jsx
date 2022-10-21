@@ -17,6 +17,13 @@ const details = [
   },
 ];
 
+const teams = [
+  '/img/team/1.webp',
+  '/img/team/2.webp',
+  '/img/team/3.webp',
+  '/img/team/4.webp',
+];
+
 const GetInsurance = () => {
   return (
     <div className='get-insurance'>
@@ -57,11 +64,14 @@ const GetInsurance = () => {
           </div>
         </div>
         <div className='get-insurance-grid-right'>
-          <img
-            src='/img/team.webp'
-            alt='mask banner'
-            className='get-insurance-grid-right-masked-img'
-          />
+          {teams.map((team) => (
+            <img
+              key={team}
+              src={team}
+              alt='teams'
+              className='get-insurance-grid-right-masked-img'
+            />
+          ))}
         </div>
       </div>
     </div>
