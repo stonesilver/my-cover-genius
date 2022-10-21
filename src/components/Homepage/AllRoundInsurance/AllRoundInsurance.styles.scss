@@ -55,14 +55,88 @@
 
     &-service {
       cursor: pointer;
-      transition: transform 0.3s ease-in-out;
 
-      &:hover .scale-icon {
-        transform: scale(1.12);
-      }
-      &-icon {
+      &-affordable-icon,
+      &-paper-work-icon,
+      &-added-business-icon {
+        position: relative;
         width: 3rem;
         height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #eff8ff;
+
+        .affordable-icon,
+        .paper-work-icon,
+        .added-business-icon {
+          position: absolute;
+
+          &.back {
+            transform: translate(-20%, -20%);
+            animation: back 5s linear infinite;
+
+            @keyframes back {
+              0% {
+                transform: translate(-20%, -20%);
+              }
+              100% {
+                transform: translate(-40%, -40%) scale(1.05);
+              }
+            }
+          }
+
+          &.ball {
+            transform: translate(-80%, -100%);
+            transition: all 0.5s ease-in-out;
+            animation: ball 5s linear infinite;
+
+            @keyframes ball {
+              0% {
+                transform: translate(-80%, -100%);
+              }
+              100% {
+                transform: translate(0%, 0%);
+                stroke: #9b8afb;
+              }
+            }
+          }
+        }
+      }
+
+      &-paper-work-icon {
+        .triangle {
+          transform: translate(60%, -40%);
+          animation: triangle 5s linear infinite;
+
+          @keyframes triangle {
+            0% {
+              transform: translate(60%, -40%);
+            }
+            100% {
+              transform: translate(0%, 40%);
+            }
+          }
+        }
+      }
+
+      &-added-business-icon {
+        background-color: #fce7f6;
+
+        .shield {
+          transform: translate(50%, 20%) scale(0.2);
+          animation: shield 3s linear infinite;
+
+          @keyframes shield {
+            0% {
+              transform: translate(50%, 20%) scale(0.2);
+            }
+            100% {
+              transform: translate(50%, 20%) scale(1);
+            }
+          }
+        }
       }
 
       &-title {
