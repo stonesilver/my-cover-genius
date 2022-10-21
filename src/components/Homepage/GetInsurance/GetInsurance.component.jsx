@@ -1,15 +1,17 @@
+import { ReactComponent as DesktopIcon } from '../../../assets/svg/desktop.svg';
+import { ReactComponent as MobileIcon } from '../../../assets/svg/mobile.svg';
 import './GetInsurance.styles.scss';
 
 const details = [
   {
     title: 'Via our Web Portal',
-    icon: '/img/icon/desktop.webp',
+    icon: <DesktopIcon className='get-insurance-grid-left-row-card-icon' />,
     desc: 'Conveniently manage all your business plans and staff from our web portal.',
     link: 'Get covered now',
   },
   {
     title: 'Via our Mobile App',
-    icon: '/img/icon/mobile.webp',
+    icon: <MobileIcon className='get-insurance-grid-left-row-card-icon' />,
     desc: 'Your staff also enjoys the coverage from our user-friendly mobile app.',
     link: 'See the App',
   },
@@ -33,11 +35,7 @@ const GetInsurance = () => {
           <div className='get-insurance-grid-left-row'>
             {details.map(({ title, icon, desc, link }) => (
               <div key={title} className='get-insurance-grid-left-row-card'>
-                <img
-                  src={icon}
-                  alt='desktop'
-                  className='get-insurance-grid-left-row-card-icon'
-                />
+                {icon}
                 <div className='get-insurance-grid-left-row-card-body'>
                   <p className='get-insurance-grid-left-row-card-body-title'>
                     {title}

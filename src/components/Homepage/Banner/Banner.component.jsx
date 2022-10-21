@@ -29,7 +29,7 @@ const Banner = () => {
           <div className='animation-container'>
             <div className='center-image-container'>
               <img
-                src='/img/services/Mask-group.webp'
+                src='/img/services/center.webp'
                 alt='center'
                 className='center-image'
               />

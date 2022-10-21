@@ -83,11 +83,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
+        
         .center-image {
           width: 6.81rem;
           height: 6.81rem;
-          object-fit: contain;
+          object-fit: cover;
+          border-radius: 50%;
           z-index: 1;
 
           @include sm {
