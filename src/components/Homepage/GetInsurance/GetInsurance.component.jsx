@@ -26,7 +26,7 @@ const teams = [
 
 const GetInsurance = () => {
   return (
-    <div className='get-insurance'>
+    <section className='get-insurance'>
       <p className='get-insurance-intro'>Get insurance at your convenience</p>
       <p className='get-insurance-title'>
         Get your business covered from anywhere
@@ -74,7 +74,7 @@ const GetInsurance = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -49,7 +49,7 @@ const cardItem = [
 
 const AllRoundInsurance = () => {
   return (
-    <div className='all-round-insurance'>
+    <section className='all-round-insurance'>
       <p className='all-round-insurance-heading'>
         Experience all-around insurance for SME, startup or large business.
       </p>
@@ -77,7 +77,7 @@ const AllRoundInsurance = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

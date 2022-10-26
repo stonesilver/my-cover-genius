@@ -10,7 +10,7 @@ import GetInsurance from '../../components/Homepage/GetInsurance/GetInsurance.co
 
 const Homepage = () => {
   return (
-    <>
+    <article>
       <Banner />
       <Brands />
       <AllRoundInsurance />
@@ -20,7 +20,7 @@ const Homepage = () => {
       <GetInsurance />
       <CoCreatingSolution />
       <Faq />
-    </>
+    </article>
   );
 };
 

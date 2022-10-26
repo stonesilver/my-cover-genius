@@ -21,7 +21,7 @@ const images = [
 
 const Brands = () => {
   return (
-    <div className='brands-covered'>
+    <section className='brands-covered'>
       <p className='brands-covered-title'>Brands covered by us:</p>
 
       <div className='brands-covered-brands-container'>
@@ -52,7 +52,7 @@ const Brands = () => {
           ))}
         </Swiper>
       </div>
-    </div>
+    </section>
   );
 };
 

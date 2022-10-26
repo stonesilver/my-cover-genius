@@ -18,7 +18,7 @@ const claims = [
 
 const ClaimsAssessments = () => {
   return (
-    <div className='claims-assessments'>
+    <section className='claims-assessments'>
       <p className='claims-assessments-intro'>100% Claims Assessments</p>
       <p className='claims-assessments-title'>Make claims with ease</p>
       <p className='claims-assessments-sub-text'>
@@ -55,7 +55,7 @@ const ClaimsAssessments = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

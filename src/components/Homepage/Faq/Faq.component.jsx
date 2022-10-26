@@ -33,7 +33,7 @@ const Faq = () => {
   };
 
   return (
-    <div className='faq'>
+    <section className='faq'>
       <div className='faq-left'>
         <p className='faq-left-title'>What would you like to know?</p>
         <div className='faq-left-btns'>
@@ -74,7 +74,7 @@ const Faq = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

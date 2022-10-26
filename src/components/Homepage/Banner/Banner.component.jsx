@@ -10,7 +10,7 @@ import './Banner.styles.scss';
 
 const Banner = () => {
   return (
-    <div className='homepage-banner'>
+    <section className='homepage-banner'>
       <div className='row'>
         <Col xs={12} lg={7} className='banner-text'>
           <p className='bold-text'>
@@ -117,7 +117,7 @@ const Banner = () => {
           </div>
         </Col>
       </div>
-    </div>
+    </section>
   );
 };
 

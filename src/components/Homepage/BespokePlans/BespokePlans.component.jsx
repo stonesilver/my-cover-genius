@@ -26,7 +26,7 @@ const BespokePlans = () => {
   const [activeTab, setActiveTab] = useState('Auto');
 
   return (
-    <div className='bespoke-plans'>
+    <section className='bespoke-plans'>
       <p className='bespoke-plans-intro'>BespokePlans</p>
       <p className='bespoke-plans-title'>
         Tailor-made plans suited for your business
@@ -82,7 +82,7 @@ const BespokePlans = () => {
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 

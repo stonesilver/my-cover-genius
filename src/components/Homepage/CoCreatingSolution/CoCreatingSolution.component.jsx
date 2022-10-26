@@ -13,7 +13,7 @@ const list = [
 
 const CoCreatingSolution = () => {
   return (
-    <div className='co-creating-solution'>
+    <section className='co-creating-solution'>
       <p className='co-creating-solution-title'>Co-creating solutions with:</p>
       <div className='co-creating-solution-view'>
         {list.map((img) => (
@@ -25,7 +25,7 @@ const CoCreatingSolution = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

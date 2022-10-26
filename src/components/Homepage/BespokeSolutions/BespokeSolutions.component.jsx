@@ -4,7 +4,7 @@ const items = ['Plans', 'Claim', 'Beneficiaries', 'Wallet'];
 
 const BespokeSolutions = () => {
   return (
-    <div className='bespoke-solutions'>
+    <section className='bespoke-solutions'>
       <p className='bespoke-solutions-intro'>Bespoke solutions</p>
       <p className='bespoke-solutions-title'>
         One-in-all Solution for Businesses
@@ -36,7 +36,7 @@ const BespokeSolutions = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
