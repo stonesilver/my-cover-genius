@@ -49,7 +49,10 @@ const Faq = () => {
             key={question}
             className={`faq-right-card ${active === question ? 'active' : ''}`}
           >
-            <div className='faq-right-card-question-and-icon'>
+            <div
+              className='faq-right-card-question-and-icon'
+              onClick={() => toggleAnswer(question)}
+            >
               <p className='faq-right-card-question-and-icon-question'>
                 {question}
               </p>
@@ -59,7 +62,6 @@ const Faq = () => {
                 className={`faq-right-card-question-and-icon-icon ${
                   active === question ? 'rotate' : ''
                 }`}
-                onClick={() => toggleAnswer(question)}
               />
             </div>
             <div
