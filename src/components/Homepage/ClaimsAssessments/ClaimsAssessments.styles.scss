@@ -2,11 +2,10 @@
 @import '../../../scss/variables';
 
 .claims-assessments {
-  position: relative;
-  margin-top: 4.3rem;
   clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
   background-color: #f8fcfb;
   padding: 6rem 1.25rem;
+  margin-top: 4.3rem;
 
   &-intro {
     font-size: 0.75rem;

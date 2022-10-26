@@ -1,9 +1,9 @@
 @import '../../../scss/media-queries';
 @import '../../../scss/variables';
+@import '../../../scss/page-layout';
 
 .all-round-insurance {
-  margin-top: 4.3rem;
-  padding: 0 1.25rem;
+  @include pageLayout;
 
   &-heading {
     text-align: center;
@@ -75,7 +75,7 @@
 
           &.back {
             transform: translate(-20%, -20%);
-            animation: back 5s linear infinite;
+            animation: back 3s linear infinite;
 
             @keyframes back {
               0% {
@@ -90,7 +90,7 @@
           &.ball {
             transform: translate(-80%, -100%);
             transition: all 0.5s ease-in-out;
-            animation: ball 5s linear infinite;
+            animation: ball 3s linear infinite;
 
             @keyframes ball {
               0% {
@@ -108,7 +108,7 @@
       &-paper-work-icon {
         .triangle {
           transform: translate(60%, -40%);
-          animation: triangle 5s linear infinite;
+          animation: triangle 2s linear infinite;
 
           @keyframes triangle {
             0% {
@@ -163,24 +163,5 @@
     @include md {
       margin-top: 7rem;
     }
-  }
-
-  @include sm {
-    padding: 0 3.25rem;
-  }
-
-  @include md {
-    padding: 0 2.25rem;
-    margin-top: 6.25rem;
-  }
-
-  @include lg {
-    padding: 0 6.25rem;
-  }
-
-  @include xxl {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }

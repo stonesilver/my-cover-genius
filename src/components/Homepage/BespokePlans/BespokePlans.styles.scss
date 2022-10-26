@@ -1,9 +1,9 @@
 @import '../../../scss/media-queries';
 @import '../../../scss/variables';
+@import '../../../scss/page-layout';
 
 .bespoke-plans {
-  margin-top: 4.3rem;
-  padding: 0 1.25rem;
+  @include pageLayout;
 
   &-intro {
     font-size: 0.75rem;
@@ -180,24 +180,5 @@
     @include md {
       margin-top: 3.1rem;
     }
-  }
-
-  @include sm {
-    padding: 0 3.25rem;
-  }
-
-  @include md {
-    padding: 0 2.25rem;
-    margin-top: 6.25rem;
-  }
-
-  @include lg {
-    padding: 0 6.25rem;
-  }
-
-  @include xxl {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
